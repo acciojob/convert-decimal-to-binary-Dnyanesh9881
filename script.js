@@ -1,18 +1,18 @@
 function decimalToBinary(num) {
   // your code here
 	let str="";
-	while (n>=1) {
-		if(n==1){
-			str+=1;
+	while (num>=0) {
+		if(num==1 || num==0){
+			str+=num;
 		break;
 		}
-			let rem=n%2;
+			let rem=num%2;
 			str+=rem;
 	
-		n=n/2;
+		num=Math.floor(num/2);
 		
 	}
-	return str;
-}
+	return str; 
+} 
 const num = parseInt(prompt("Enter a number.")); 
 alert(decimalToBinary(num));
