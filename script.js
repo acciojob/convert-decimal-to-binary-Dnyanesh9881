@@ -12,7 +12,8 @@ function decimalToBinary(num) {
 		num=Math.floor(num/2);
 		
 	}
-	return str; 
+	 // str.split("").reduce((acc, char) => char + acc, "");
+	return str.split("").reduce((acc, char) => char + acc, "");; 
 } 
 const num = parseInt(prompt("Enter a number.")); 
 alert(decimalToBinary(num));
